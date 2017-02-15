@@ -1,0 +1,13 @@
+/*Write all of your CSS here*/
+div{
+    text-align: center;
+}
+h6 {
+    color: blue;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+img{
+    text-align: center;
+}

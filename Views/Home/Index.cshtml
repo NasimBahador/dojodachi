@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Your Beautiful Dojodachi!</h1>
+<div>   
+<h6>Fullness: @ViewBag.Full</h6>
+<h6>Happiness: @ViewBag.Happy</h6>
+<h6>Meals: @ViewBag.Meals</h6>
+<h6>Energy: @ViewBag.Energy</h6>
+</div>
+<p><img src="images/@ViewBag.image" alt="Blue Fuzzy Monster"></p>
+<p>@ViewBag.message</p>
+@{
+    if(ViewBag.Show == "false"){
+        <a href="Reset"><button>Reset</button></a>
+
+    }else if(ViewBag.Show == "true"){
+        <a href="process/Feed"><button name="Feed" >Feed</button></a>
+        <a href="process/Play"><button name="Play" >Play</button></a>
+        <a href="process/Work"><button name="Work" >Work</button></a>
+        <a href="process/Sleep"><button name="Sleep" >Sleep</button></a>
+    }
+    
+}
